@@ -163,3 +163,97 @@
     }
   }
 }
+
+footer {
+  background-color: #fcf9f7;
+  z-index: 100;
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  border-image-source: linear-gradient(to right, #56ab2f, #a8e063);
+  box-sizing: border-box;
+  .main-footer {
+    .social-links {
+      i {
+        padding-right: 25px;
+        margin-top: 25px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover {
+          color: #549c43;
+        }
+      }
+    }
+    padding: 100px 0;
+    .footer-logo {
+      width: 30%;
+      margin-bottom: 15px;
+    }
+    .caption {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-family: lato, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      color: #58595b;
+      word-wrap: break-word;
+    }
+    .about,
+    .help {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      text-align: start;
+      justify-content: start;
+      h2 {
+        font-size: 25px !important;
+        color: #549c43;
+        font-family: Alegreya, serif;
+        line-height: 24px;
+        word-spacing: 2.8px;
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 10px 0;
+          a {
+            color: #000000;
+            font-size: 15px;
+            font-family: lato, sans-serif;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .sticky-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #56ab2f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #a8e063,
+      #56ab2f
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #a8e063,
+      #56ab2f
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    p {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-family: lato, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: #58595b;
+    }
+  }
+}
